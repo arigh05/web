@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Power Calculator using JS</title>
+</head>
+<body>
+  <h1>Power Calculator</h1>
+  <input type="number" id="m" placeholder="Enter m">
+  <input type="number" id="n" placeholder="Enter n">
+  <button type="button" onclick="findMn()">Find</button>
+  <div id="result"></div>
+  <script>
+    function findMn() {
+      var m = document.getElementById("m").value;
+      var n = document.getElementById("n").value;
+      var result = Math.pow(m, n);
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+</body>
+</html>
